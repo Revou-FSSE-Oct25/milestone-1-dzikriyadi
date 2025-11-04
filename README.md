@@ -2,6 +2,8 @@
 
 ## Portofolio Milestone Belajar Software Engineer
 
+[**[LINK_DEPLOYED_WEBSITE]**](https://isi disini)
+
 ## 💡 Overview Website
 
 Website portofolio ini difungsikan untuk menampilkan Hasil **Perjalanan/Milestone Belajar**
@@ -25,8 +27,8 @@ Fitur yang tersedia di website portofolio ini:
 - **Struktur HTML yang Semantik**
 - **Perkenalan Sedikit tentang saya**
 - **Link Social Media** Seperti LinkedIn, GitHub, Instagram.
-- **Bagian `About Me`:** Deskripsi singkat saya.
-- **Daftar Proyek `Projects`:** Proyek yang pernah saya kerjakan, deskripsi singkat, dan tombol menuju Contoh Proyeknya.
+- **Bagian `Profile`:** Deskripsi singkat saya.
+- **Daftar Proyek `Journey`:** Proyek yang pernah saya kerjakan, deskripsi singkat, dan tombol menuju Contoh Proyeknya.
 - **Formulir Kontak `Contact Form`:** Formulir kontak untuk mengirim pesan langsung. dan langsung Menampilkan isi pesannya.
 
 ---
