@@ -1,0 +1,122 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bd-grid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+}
+
+.logo-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: wheat;
+  /* background-image: url(img/logo.png); */
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: white;
+}
+.home-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: wheat;
+  margin-top: 20px;
+}
+
+#journey .button {
+  background-color: wheat;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px 20px;
+}
+#journey .button:hover {
+  background-color: rgb(252, 230, 188);
+  color: black;
+  font-size: 17px;
+  padding: 12px 22px;
+}
+
+/* Tabel */
+
+form {
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: wheat;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-color: white;
+}
+
+a.social-icon {
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  transition-property: background-color;
+  background-color: wheat;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  padding: 9px 0px;
+  color: black;
+  margin: 2px;
+}
+
+footer .footer-content {
+  background-color: wheat;
+}
