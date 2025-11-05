@@ -1,19 +1,24 @@
+// Javascript hanya tambahan, mencoba peraktek belajar sedikit sedikit dengan Ai
 console.log("Script loaded successfully.");
 
-// greetUser();
+greetUser();
 
 function greetUser(name) {
   let userName = prompt("Please enter your name:");
   document.getElementById("welcome-speech").innerText = userName;
 }
 
+/// disini menggunakan let karena nilai userName bisa berubah sesuai input user
+
+/// Fungsi untuk validasi form
 function validateForm() {
-  /// initialize variables to store form input values
+  ///inisialisasi variabel untuk menyimpan nilai input form
+
   let name = document.getElementById("name-input").value;
   let email = document.getElementById("email-input").value;
   let message = document.getElementById("message-input").value;
 
-  /// check if fields are empty
+  /// check jika Kolom input kosong
   console.log(name, email, message);
   if (name === "" || email === "" || message === "") {
     /// jika kosong, tampilkan alert
@@ -29,10 +34,11 @@ function validateForm() {
 // Ambil elemen form
 const form = document.getElementById("contactForm");
 
-// Saat form disubmit
+/// Menampilkan tabel dan content input, Saat form disubmit
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // Supaya tidak reload halaman
 
+  /// disini menggunakan const (konstan) artinya nilainya tidak akan diubah lagi
   // Ambil nilai input
   const name = document.getElementById("name-input").value;
   const email = document.getElementById("email-input").value;

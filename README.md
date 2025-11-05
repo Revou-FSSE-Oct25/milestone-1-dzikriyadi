@@ -2,7 +2,7 @@
 
 ## Portofolio Milestone Belajar Software Engineer
 
-[**[LINK_DEPLOYED_WEBSITE]**](https://isi disini)
+[**[LINK_DEPLOYED_WEBSITE]**](https://github.com/Revou-FSSE-Oct25/milestone-1-dzikriyadi) _menunggu link deploy_
 
 ## 💡 Overview Website
 
