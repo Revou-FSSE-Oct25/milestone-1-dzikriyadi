@@ -70,8 +70,9 @@ async function greetUser() {
   document.getElementById("welcome-speech").innerText = welcomeText;
 }
 
-// Panggil fungsi untuk menampilkan pop-up saat dokumen siap (misalnya, di akhir body atau dalam event onload)
-// greetUser();
+// ***######Panggil fungsi untuk menampilkan pop-up saat dokumen siap (misalnya, di akhir body atau dalam event onload)
+
+greetUser();
 
 /// disini menggunakan let karena nilai userName bisa berubah sesuai input user
 
