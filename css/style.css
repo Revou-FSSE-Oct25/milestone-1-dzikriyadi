@@ -1,37 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
 }
-
-.bd-grid {
+section {
+  color: #333;
+}
+.bg-wrap {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-}
+  margin: 50px auto;
 
-.logo-icon {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: wheat;
-  /* background-image: url(img/logo.png); */
+  padding: 20px;
 }
-
-.main-header {
+.content-height {
+  width: 100%;
+}
+.lexend-giga-logo {
+  font-family: "Lexend Giga", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  color: #333;
+}
+.head {
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 8px 16px -4px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  z-index: 3;
+}
+.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  background-color: white;
+  padding: 20px 30px;
+  margin: auto;
+  width: 100%;
 }
+
 .home-img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   background-color: wheat;
   margin-top: 20px;
+  box-shadow: 5px 5px 10px #333, -5px -5px 10px #333333;
 }
 
 #journey .button {
@@ -40,12 +59,12 @@ ul {
   font-weight: bold;
   font-style: italic;
   padding: 10px 20px;
+  transition: all 0.3s ease-out;
 }
 #journey .button:hover {
-  background-color: rgb(252, 230, 188);
-  color: black;
-  font-size: 17px;
-  padding: 12px 22px;
+  background-color: #333;
+  color: wheat;
+  border: 1px dashed wheat;
 }
 
 /* Tabel */
@@ -56,10 +75,11 @@ form {
   padding: 15px;
   border-radius: 8px;
 }
-
+#contactForm {
+  text-align: left;
+}
 label {
   display: block;
-  margin-top: 10px;
 }
 
 input,
@@ -81,11 +101,12 @@ button {
   cursor: pointer;
   font-weight: bold;
   font-style: italic;
+  transition: all 0.3s ease-out;
 }
 
 button:hover {
-  background-color: grey;
-  color: white;
+  background-color: #333;
+  color: wheat;
 }
 
 table {
@@ -115,8 +136,312 @@ a.social-icon {
   padding: 9px 0px;
   color: black;
   margin: 2px;
+  transition: all 0.3s ease-in-out;
+}
+a.social-icon:hover {
+  background-color: #333;
+  color: wheat;
 }
 
 footer .footer-content {
   background-color: wheat;
+  font-weight: 700;
+}
+
+/* HEADER BURGER MENU */
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+/* header */
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+
+  text-decoration: none;
+}
+.header li {
+  border-right: 1px solid #dddada;
+}
+.header li:last-child {
+  border: none;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  left: 20px;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.content-move {
+  background-color: white;
+  width: 100%;
+}
+.container-move {
+  margin-top: 150px;
+}
+.bg1 {
+  display: none;
+}
+.item-move {
+  transform: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    height: 100vh;
+  }
+  .bg-wrap {
+    padding-left: 1.5rem;
+
+    width: 100%;
+    margin: auto;
+  }
+
+  .content-move {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+  }
+  .container-move {
+    height: 100vh;
+    margin: 0;
+  }
+  .bg1 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 110vh;
+    object-fit: cover;
+  }
+  #journey {
+    margin-top: 100vh;
+  }
+  .item-move {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+  }
+
+  .list-disc li {
+    transition: all 0.3s ease-out;
+  }
+  .list-disc li:hover {
+    border-radius: 20px;
+    border-radius: 10px;
+    background: #f5deb3;
+    box-shadow: 5px 5px 26px #625948, -5px -5px 26px #625948;
+    color: #333;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  /* HEADER BURGER MENU */
+  .header {
+    width: 90%;
+    padding: 20px;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  .header li a:hover {
+    color: wheat;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  .bg-style {
+    background-color: #333;
+    color: white;
+  }
+  .content-height {
+    height: 100vh; /* memenuhi satu layar */
+    display: flex;
+    flex-direction: column; /* isi tetap tersusun ke bawah */
+    justify-content: center; /* center secara vertikal */
+    align-items: center; /* center secara horizontal */
+    text-align: center;
+  }
+  .home-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.title-modify {
+  font-size: 2.5rem;
+  padding: 30px 0;
+  font-weight: 800;
+  text-decoration: underline;
+  font-style: italic;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-inner {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.msg {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 32px;
+}
+.msg .line {
+  color: wheat;
+  padding: 0 30px;
+}
+
+/* Styling untuk Overlay (Latar Belakang) */
+.modal {
+  display: none; /* Sembunyikan secara default */
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303030; /* Latar belakang semi-transparan */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling untuk Kotak Konten Pop-up */
+.modal-content {
+  background-color: #fefefe; /* Warna latar belakang putih */
+  padding: 30px;
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Bayangan */
+  width: 300px;
+  text-align: center;
+}
+
+/* Styling untuk Input Teks */
+#user-input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling untuk Tombol */
+.modal-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#ok-button {
+  background-color: wheat; /* Biru */
+  color: #333;
+}
+
+#cancel-button {
+  background-color: #333; /* Abu-abu */
+  color: white;
 }
