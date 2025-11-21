@@ -6,6 +6,10 @@
 
 [**[https://revou-fsse-oct25.github.io/milestone-1-dzikriyadi/]**](https://revou-fsse-oct25.github.io/milestone-1-dzikriyadi/)
 
+# DISARANAKAN MEMBUKA DARI MOBILE FIRST :) !
+
+.
+
 ## 💡 Overview Website
 
 Website portofolio ini difungsikan untuk menampilkan Hasil **Perjalanan/Milestone Belajar**
